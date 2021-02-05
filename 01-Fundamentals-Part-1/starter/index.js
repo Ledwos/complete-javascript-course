@@ -73,5 +73,18 @@ calcScore(matchData);
 // Q4
 console.log('Q4');
 
+function tipCalc(bill) {
+    if (bill >= 50 & bill <= 300) {
+        let tip = bill * 0.15;
+        console.log(`The bill is ${bill}, tip ${tip} for a total of ${bill + tip}`)
+    } else if (bill > 300) {
+        let tip = bill * 0.2;
+        console.log(`The bill is ${bill}, tip ${tip} for a total of ${bill + tip}`)
+    } else {
+        console.log(`The bill is ${bill}, no need to tip`);
+    }
+};
 
-
+tipCalc(275);
+tipCalc(40);
+tipCalc(430);
